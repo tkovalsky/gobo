@@ -7,7 +7,10 @@ from .models import Question
 
 # Create your views here.
 def home(request):
-    return render(request, 'index.html')
+    return render(request, 'home.html')
+
+def services(request):
+    return render(request, 'services.html')
 
 def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]

@@ -4,8 +4,14 @@ from . import views
 
 urlpatterns = [
     # ex: /polls/
-    path('', views.index, name='index'),
+
     # ex: /polls/5/
+    path('', views.home, name='home'),
+
+    path('', views.index, name='index'),
+
+    path('services/', views.services, name='services'),
+
     path('<int:question_id>/', views.detail, name='detail'),
     # ex: /polls/5/results/
     path('<int:question_id>/results/', views.results, name='results'),
