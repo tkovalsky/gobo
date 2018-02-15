@@ -45,13 +45,14 @@
   padding: 20px;
   line-height: 1.55;
   margin-bottom: 30px;
+  border-radius: .3rem;
 }
 .app-code span {
   color: #8496A5;
 }
 @media (min-width: 768px) {
   .app-code {
-    width: 600px;
+    width: 520px;
     margin-bottom: 0;
   }
 }
@@ -128,7 +129,7 @@
 
 /* general inverse overrides */
 .block-inverse .text-muted {
-  color: rgba(255, 255, 255, .7);
+  color: rgba(255, 255, 255, .7) !important;
 }
 .block-inverse .block-bg-img {
   background-color: transparent;
