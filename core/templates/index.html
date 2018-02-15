@@ -1,50 +1,8 @@
 {% extends 'base.html' %}
 
-{% block title %}Homepage - {{ block.super }}  {% endblock title %}
+{% block title %} {{ block.super }} gobo &middot; Solutions for Advisors {% endblock %}
 
 
-
-{% block hero %}
-{% load staticfiles %}
-<img class="app-graph" src="{% static 'img/startup-0.svg' %}">
-<div class="block-sm-middle block-xs-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-5">
-            <h1 class="block-title m-b-md">
-              <span class="text-ribbon text-ribbon-primary">
-                <span>Problems. Solved.</span>
-              </span>
-            </h1>
-            <p class="lead">
-              <span class="text-ribbon text-ribbon-primary">
-                <span>
-                  We help advisors save time and money.
-                </span>
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<div class="row">
-        <div class="col-md-3">.col-md-3</div>
-
-        {% if latest_question_list %}
-            <ul>
-            {% for question in latest_question_list %}
-                <li><a href="/core/{{ question.id }}/">{{ question.question_text }}</a></li>
-            {% endfor %}
-            </ul>
-        {% else %}
-            <p>No polls are available.</p>
-        {% endif %}
-
-        <div class="col-md-3">.col-md-3</div>
-        <div class="col-md-3">.col-md-3</div>
-        <div class="col-md-3">.col-md-3</div>
-      </div>
-
+{% block content %}
+home
 {% endblock %}
