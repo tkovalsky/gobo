@@ -1,2 +1,1 @@
-web: waitress-serve --port=$PORT gobo.wsgi:application
-
+web: gunicorn gobo.wsgi
