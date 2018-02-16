@@ -29,7 +29,7 @@ class Choice(models.Model):
 
 
 
-class Signup(models.Model):
+class Contact(models.Model):
     name = models.CharField(blank=False, max_length=200)
     email = models.EmailField(primary_key=True, unique=True, blank=False, max_length=200)
     signup_type = models.CharField(max_length=1)

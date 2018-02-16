@@ -3,13 +3,13 @@ from django.shortcuts import get_object_or_404, render
 from django.template import loader
 
 from .models import Question
-from .forms import SignupForm
+from .forms import ContactForm
 
 
 
 # Create your views here.
 def home(request):
-    form = SignupForm(request.POST or None)
+    form = ContactForm(request.POST or None)
     if form.is_valid():
         form.save()
         messages.success(request, 'form was posted') #this is optional but good for the user
