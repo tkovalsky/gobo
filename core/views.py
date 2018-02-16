@@ -20,8 +20,8 @@ def home(request):
         }
     return render(request, 'home.html', context)
 
-def signup(request):
-    form_class = SignupForm
+def contact(request):
+    form_class = ContactForm
     return render(request, 'contact.html', {
         'form': form_class
     })
@@ -30,7 +30,14 @@ def studies(request):
     return render(request, 'studies.html')
 
 def services(request):
-    return render(request, 'services.html')
+    form = ContactForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        messages.success(request, 'form was posted') #this is optional but good for the user
+    context = {
+        'form': form,   #here you are passing the variable "form" to the template so you can use it like "{{form.as_p}}"
+        }
+    return render(request, 'services.html', context)
 
 def strategy(request):
     return render(request, 'strategy.html')

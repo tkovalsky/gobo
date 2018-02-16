@@ -19,8 +19,10 @@
     <div class="row">
       <div class="col-sm-10 col-lg-7">
         <h1 class="block-titleData frequency">Practice Management's Digital Wave</h1>
-        <p class="lead mb-4 text-muted">Compressed margins, competition, and automation are changing the advisory business. </p>
-        <a class="btn btn-primary btn-lg" href="#whatwedo" role="button">What is goboAdvisor?</a>
+        <p class="lead mb-4 text-muted-bold">Compressed margins, competition, and automation are changing business models. We
+        help small to mid size asset advisory businesses solve problems, build brands, convert prospects, and educate
+        customers</p>
+        <a class="btn btn-primary btn-lg" href="#whatwedo" role="button">How can goboAdvisor help me?</a>
 
       </div>
     </div>
@@ -78,6 +80,27 @@
   </div>
 </div>
 
+<div class="block app-ribbon py-5">
+  <div class="container text-xs-center">
+
+    <div class="row mb-5 justify-content-center">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <h1 class="mb-1 text-white">Past Projects</h1>
+      </div>
+    </div>
+
+    <img src="{% static 'img/startup-4.svg' %}">
+    <img src="{% static 'img/startup-5.svg' %}">
+    <img src="{% static 'img/startup-6.svg' %}">
+    <img src="{% static 'img/startup-7.svg' %}">
+    <img src="{% static 'img/startup-8.svg' %}">
+    <img src="{% static 'img/startup-4.svg' %}">
+    <img src="{% static 'img/startup-5.svg' %}">
+    <img src="{% static 'img/startup-6.svg' %}">
+    <img src="{% static 'img/startup-7.svg' %}">
+    <img src="{% static 'img/startup-8.svg' %}">
+  </div>
+</div>
 
 <div class="block block-inverse app-high-praise"
      style="background-image: url({% static 'img/startup-3.jpg' %});">
@@ -87,12 +110,13 @@
       <div class="row app-align-center py-3 justify-content-end">
         <div class="col-sm-7 col-md-5 py-5">
           <h6 class="text-muted text-uppercase mb-2">Generate Revenue</h6>
-          <h2 class="mb-4">When your advisors spend time on non revenue generating functions like processing forms, new customers are not coming in the door.</h2>
+          <h2 class="mb-4">When advisors spend time on non revenue generating functions like processing forms, customers aren't getting the attention they want.</h2>
           <!--<p class="mb-4 text-muted">Cindy Smith, founder of Cool Startup</p>-->
         </div>
       </div>
   </div>
 </div>
 
+{% include 'services.html' %}
 
 {% endblock %}

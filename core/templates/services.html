@@ -8,7 +8,7 @@
 
 
 
-
+{% block content %}
   <div class="block block-secondary app-block-marketing-grid">
     <div class="container text-xs-center">
 
@@ -36,9 +36,10 @@
             <div class="featured-list-icon text-primary">
               <span class="icon icon-image"></span>
             </div>
-            <p class="featured-list-icon-text mb-0"><strong>Lead generation</strong></p>
+            <p class="featured-list-icon-text mb-0"><strong>Lead Generation</strong></p>
             <p class="featured-list-icon-text">
-              We process all the images you upload and take full advantage of modern cloud based storage to host them at blazing fast speeds.
+              Finding prospects and building brand-name recognition go hand in hand. We will help your team locate and target
+              these potential customers, coaching them through the process of turning a prospect into a sale.
             </p>
           </li>
 
@@ -48,7 +49,8 @@
             </div>
             <p class="featured-list-icon-text mb-0"><strong>Strategic Consulting</strong></p>
             <p class="featured-list-icon-text">
-              This means you save tons of time by using our world class task manager and calendar and constantly reminds you how great it is.
+              Figuring it out prevents people from ever getting starting. We start by helping you communicate your visiton while
+              reverse engineering the problem to give you the map and guide you through the process of building a platform.
             </p>
           </li>
 
@@ -61,9 +63,11 @@
             <div class="featured-list-icon text-primary">
               <span class="icon icon-cloud"></span>
             </div>
-            <p class="featured-list-icon-text mb-0"><strong>Platform Development & Deployment </strong></p>
+            <p class="featured-list-icon-text mb-0"><strong>Platform Development </strong></p>
             <p class="featured-list-icon-text">
-              Do it over the cloud, from anywhere, on any device. Mochi is super fast and always available, to not only you, but all your friends
+              Ask any business owner what software they are using and you will receive as many different responses.
+              We don't prescribe solutions without understanding the problems. Our platform integrates
+              with yours and creates data fabric for your business.
             </p>
           </li>
 
@@ -71,7 +75,7 @@
             <div class="featured-list-icon text-primary">
               <span class="icon icon-emoji-neutral"></span>
             </div>
-            <p class="featured-list-icon-text mb-0"><strong>Learning & Development</strong></p>
+            <p class="featured-list-icon-text mb-0"><strong>Learning & Training</strong></p>
             <p class="featured-list-icon-text">
               Share with emoji anyone in the world. We've baked them directly into Mochi. These probably won't help with productivity though.
             </p>
@@ -81,6 +85,7 @@
     </div>
   </div>
 </div>
+
 
 
   <div class="block block-secondary app-block-marketing-grid">
@@ -126,18 +131,6 @@
           <p><strong>Secure connections.</strong> Every single request is routed through HTTPS.</p>
         </div>
       </div>
-    </div>
-  </div>
-
-
-
-  <div class="block app-ribbon py-5">
-    <div class="container text-xs-center">
-      <img src="{% static 'img/startup-4.svg' %}">
-      <img src="{% static 'img/startup-5.svg' %}">
-      <img src="{% static 'img/startup-6.svg' %}">
-      <img src="{% static 'img/startup-7.svg' %}">
-      <img src="{% static 'img/startup-8.svg' %}">
     </div>
   </div>
 
@@ -212,63 +205,10 @@
     </div>
   </div>
 
-
-  <div class="block block-inverse app-footer">
-   <div class="container">
-      <div class="row">
-        <div class="col-md-5 mb-5">
-          <ul class="list-unstyled list-spaced">
-            <li class="mb-2"><h6 class="text-uppercase">About</h6></li>
-            <li class="text-muted">
-               We’re working on goboAdvisor to help investment advisors and home offices save money and time with fewer resources. If you’d like to learn more, or are interested in partnering, contact us anytime at <a href="mailto: hello@goboadvisor.com">hello@goboadvisor.com</a>.
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-2 ml-auto mb-5">
-          <ul class="list-unstyled list-spaced">
-            <li class="mb-2"><h6 class="text-uppercase">Services</h6></li>
-            <li class="text-muted">Strategic Consulting</li>
-            <li class="text-muted">Lead Generation</li>
-            <li class="text-muted">Process Optimization</li>
-            <li class="text-muted">Learning & Development</li>
-          </ul>
-        </div>
-        <div class="col-md-2 mb-5">
-          <ul class="list-unstyled list-spaced">
-            <li class="mb-2"><h6 class="text-uppercase">Connectivity</h6></li>
-            <li class="text-muted">Prospects</li>
-            <li class="text-muted">Custodians</li>
-            <li class="text-muted">Platforms</li>
-            <li class="text-muted">Sponsors</li>
-          </ul>
-        </div>
-        <div class="col-md-2 mb-5">
-          <ul class="list-unstyled list-spaced">
-            <li class="mb-2"><h6 class="text-uppercase">Legal</h6></li>
-            <li class="text-muted">Terms</li>
-            <li class="text-muted">Legal</li>
-            <li class="text-muted">Privacy</li>
-            <li class="text-muted">License</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
   </div>
 
 
-      <script src="{% static 'js/jquery.min.js' %}"></script>
-      <script src="{% static 'js/popper.min.js' %}"></script>
-      <script src="{% static 'js/toolkit.js' %}"></script>
-      <script src="{% static 'js/application.js' %}"></script>
-      <script>
-        // execute/clear BS loaders for docs
-        $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
-      </script>
-  </body>
-  </html>
-
+{% endblock %}
 
 
 
