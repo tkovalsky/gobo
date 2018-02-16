@@ -1,8 +1,7 @@
 {% block contact %}
-	<h1>Contact page</h1>
 	<form method="post" role="form" class="post-form">
 		{% csrf_token %}
-		{{ form.as_p }}
+		{{ form }}
 		<button type="submit" class="save btn btn-default">Save</button>
 
 	</form>
