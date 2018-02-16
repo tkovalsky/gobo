@@ -1,78 +1,12 @@
+{% extends "base.html" %}
 {% load staticfiles %}
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-
-    <title>
 
         {% block title %}
+        OUR SERVICES
         {% endblock %}
 
-    </title>
 
-
-      <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
-      <link href="{% static 'css/toolkit-startup.css' %}" rel="stylesheet">
-      <link href="{% static 'css/application-startup.css' %}" rel="stylesheet">
-
-
-
-
-    <style>
-      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
-      /* this chunk of css is not part of the toolkit :) */
-      /* …curses ios, etc… */
-      @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
-        body {
-          width: 1px;
-          min-width: 100%;
-          *width: 100%;
-        }
-        #stage {
-          height: 1px;
-          overflow: auto;
-          min-height: 100vh;
-          -webkit-overflow-scrolling: touch;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-
-
-
-  <div class="stage-shelf stage-shelf-right hidden" id="sidebar">
-    <ul class="nav nav-bordered nav-stacked flex-column">
-      <li class="nav-header">Examples</li>
-      <li class="nav-item">
-        <a class="nav-link active" href="index.html">Startup</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="minimal/index.html">Minimal</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="bold/index.html">Bold</a>
-      </li>
-      <li class="nav-divider"></li>
-      <li class="nav-header">Docs</li>
-      <li class="nav-item">
-        <a class="nav-link" href="docs/index.html">Toolkit</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="http://getbootstrap.com">Bootstrap</a>
-      </li>
-    </ul>
-  </div>
-
-
-<div class="stage" id="stage">
 
 
   <div class="block block-secondary app-block-marketing-grid">
@@ -178,7 +112,6 @@
         </div>
 
       </div>
-<!--
       <div class="row app-marketing-grid">
         <div class="col-md-4 px-4 mb-5">
           <img class="mb-1" src="{% static 'img/startup-12.svg' %}">
@@ -192,27 +125,11 @@
           <img class="mb-1" src="{% static 'img/startup-14.svg' %}">
           <p><strong>Secure connections.</strong> Every single request is routed through HTTPS.</p>
         </div>
--->
       </div>
     </div>
   </div>
 
 
-  <div class="block block-inverse app-high-praise"
-       style="background-image: url({% static 'img/startup-3.jpg' %});">
-
-
-      <div class="container">
-        <div class="row app-align-center py-3 justify-content-end">
-          <div class="col-sm-7 col-md-5 py-5">
-            <h6 class="text-muted text-uppercase mb-2">High Praise</h6>
-            <h2 class="mb-4">“Go Analytics is amazing. Decisions that used to take weeks, now only takes minutes and is available to everyone on my team.”</h2>
-            <p class="mb-4 text-muted">Cindy Smith, founder of Cool Startup</p>
-          </div>
-        </div>
-    </div>
-  </div>
-  <!--
 
   <div class="block app-ribbon py-5">
     <div class="container text-xs-center">
@@ -223,7 +140,6 @@
       <img src="{% static 'img/startup-8.svg' %}">
     </div>
   </div>
--->
 
 
 
@@ -295,14 +211,6 @@
 
     </div>
   </div>
-
-<div>
-  <form role="form" action="" method="post">
-		{% csrf_token %}
-		{{ form.as_p }}
-		<button type="submit">Submit</button>
-	</form>
-</div>
 
 
   <div class="block block-inverse app-footer">

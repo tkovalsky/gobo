@@ -1,8 +1,89 @@
 {% extends 'base.html' %}
 
+{% load staticfiles %}
+
 {% block title %}gobo - for advisors{{ block.super }}  {% endblock title %}
 
 
+{% block bgimage %}
+    <div class="block block-inverse block-fill-height app-header"
+         style="background-image: url({% static 'img/relax.jpg' %});">
+{% endblock %}
+
+
+{% block billboard %}
+<img class="app-graph"  src="{% static 'img/startup-0.svg' %}">
+
+<div class="block-xs-middle pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-lg-7">
+        <h1 class="block-titleData frequency">Practice Management's Digital Wave</h1>
+        <p class="lead mb-4 text-muted">Compressed margins, competition, and automation are changing the advisory business. </p>
+        <a class="btn btn-primary btn-lg" href="#whatwedo" role="button">What is goboAdvisor?</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+{% endblock %}
+
 
 {% block content %}
+<div class="block block-secondary app-block-marketing-grid" id="whatwedo">
+  <div class="container text-xs-center">
+
+    <div class="row mb-5 justify-content-center">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <h6 class="text-muted text-uppercase mb-2">Introducing your goboAdvisor</h6>
+      </a>
+        <h2 class="mb-4">Our simplified approach is easy to understand and helps advisors</h2>
+      </div>
+    </div>
+
+    <div class="row app-marketing-grid">
+      <div class="col-md-3 px-3 mb-5">
+        <img class="mb-1" src="{# static 'img/startup-9.svg' #}"></br>
+        <p><strong>Solve Problems.</strong> We help advisors understand the issues so that they can educate customers.</p>
+      </div>
+      <div class="col-md-3 px-3 mb-5">
+        <img class="mb-1" src="{# static 'img/startup-10.svg' #}">
+        <p><strong>Position Your Practice.</strong> We reverse engineer solutions to set advisors up for success.</p>
+      </div>
+      <div class="col-md-3 px-3 mb-5">
+        <img class="mb-1" src="{# static 'img/startup-11.svg' #}">
+        <p><strong>Convert Prospects.</strong> We educate advisors so that they can capitalize on closing deals.</p>
+      </div>
+      <div class="col-md-3 px-3 mb-5">
+        <img class="mb-1" src="{# static 'img/startup-12.svg' #}">
+        <p><strong>Educate Customers.</strong> Our platform empowers advisors for the next generation of wealth management.</p>
+      </div>
+
+    </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+<div class="block block-inverse app-high-praise"
+     style="background-image: url({% static 'img/startup-3.jpg' %});">
+
+
+    <div class="container">
+      <div class="row app-align-center py-3 justify-content-end">
+        <div class="col-sm-7 col-md-5 py-5">
+          <h6 class="text-muted text-uppercase mb-2">Generate Revenue</h6>
+          <h2 class="mb-4">When your advisors spend time on non revenue generating functions like processing forms, new customers are not coming in the door.</h2>
+          <!--<p class="mb-4 text-muted">Cindy Smith, founder of Cool Startup</p>-->
+        </div>
+      </div>
+  </div>
+</div>
+
+
 {% endblock %}

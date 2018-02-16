@@ -28,3 +28,15 @@ def signup(request):
 
 def services(request):
     return render(request, 'services.html')
+
+def strategy(request):
+    return render(request, 'strategy.html')
+
+def platform(request):
+    return render(request, 'platform.html')
+
+def learning(request):
+    return render(request, 'learning.html')
+
+def leadgen(request):
+    return render(request, 'leadgen.html')

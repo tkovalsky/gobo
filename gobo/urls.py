@@ -21,5 +21,11 @@ from core import views
 urlpatterns = [
     path('core/', include('core.urls')),
     path('admin/', admin.site.urls),
-    path('', views.home, name='home')
+    path('', views.home, name='home'),
+    path('services/', views.services, name='services'),
+    path('services/strategy', views.strategy, name='strategy'),
+    path('services/platform', views.platform, name='platform'),
+    path('services/learning', views.learning, name='learning'),
+    path('services/leadgen', views.leadgen, name='leadgen'),
+
 ]
