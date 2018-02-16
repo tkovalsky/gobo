@@ -26,6 +26,9 @@ def signup(request):
         'form': form_class
     })
 
+def studies(request):
+    return render(request, 'studies.html')
+
 def services(request):
     return render(request, 'services.html')
 
