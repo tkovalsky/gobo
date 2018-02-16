@@ -34,6 +34,7 @@ class Contact(models.Model):
     email = models.EmailField(primary_key=True, unique=True, blank=False, max_length=200)
     signup_type = models.CharField(max_length=1)
     message = models.TextField(blank=False, max_length=200)
+    robot = models.BooleanField(blank=False, default=False)
 
     def __str__(self):
         return self.email
