@@ -68,14 +68,16 @@
 {% include "navbar.html" %}
 {% if messages %}
 
+<div class="alert alert-primary" role="alert">
+  This is a primary alert—check it out!
+</div>
 
 
-  <div class="messages alert alert-primary" role="alert">
+  <div class="messages alert alert-primary">
     {% for message in messages %}
     <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
     {% endfor %}
   </ul>
-  </div>
   {% endif %}
 
 {% block billboard %} {% endblock %}
@@ -84,18 +86,7 @@
 {% block content %} {% endblock %}
 
 {% include "contact.html" %}
-
-  </div>
-</div>
-
-
-
 {% include "footer.html" %}
-
-
-
-
-
 
   </div>
 
