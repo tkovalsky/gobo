@@ -26,8 +26,13 @@ def contact(request):
         'form': form_class
     })
 
-def studies(request):
-    return render(request, 'studies.html')
+def casestudies(request):
+    return render(request, 'casestudies.html')
+
+
+def casestudies1(request):
+    return render(request, 'casestudies1.html')
+
 
 def services(request):
     form = ContactForm(request.POST or None)
