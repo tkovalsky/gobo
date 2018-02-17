@@ -27,18 +27,11 @@ def casestudies(request):
 
 
 def casestudies1(request):
-    form = ContactForm(request.POST or None)
-    if form.is_valid():
-        form.save()
-        messages.success(request, 'form was posted') #this is optional but good for the user
-    context = {
-        'form': form,   #here you are passing the variable "form" to the template so you can use it like "{{form.as_p}}"
-        }
-    return render(request, 'casestudies1.html', context)
+    return render(request, 'casestudies1.html')
 
 
 def services(request):
-    return render(request, 'services.html', context)
+    return render(request, 'services.html')
 
 def strategy(request):
     return render(request, 'strategy.html')
