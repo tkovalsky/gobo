@@ -19,12 +19,8 @@ def home(request):
         'form': form,   #here you are passing the variable "form" to the template so you can use it like "{{form.as_p}}"
         }
     return render(request, 'home.html', context)
+    #return render(request, 'home.html')
 
-def contact(request):
-    form_class = ContactForm
-    return render(request, 'contact.html', {
-        'form': form_class
-    })
 
 def casestudies(request):
     return render(request, 'casestudies.html')
@@ -33,15 +29,7 @@ def casestudies(request):
 def casestudies1(request):
     return render(request, 'casestudies1.html')
 
-
 def services(request):
-    form = ContactForm(request.POST or None)
-    if form.is_valid():
-        form.save()
-        messages.success(request, 'form was posted') #this is optional but good for the user
-    context = {
-        'form': form,   #here you are passing the variable "form" to the template so you can use it like "{{form.as_p}}"
-        }
     return render(request, 'services.html', context)
 
 def strategy(request):

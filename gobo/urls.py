@@ -19,8 +19,8 @@ from core import views
 
 
 urlpatterns = [
-    path('core/', include('core.urls')),
     path('admin/', admin.site.urls),
+    path('core/', include('core.urls')),
     path('', views.home, name='home'),
     path('casestudies/', views.casestudies, name='casestudies'),
     path('casestudies/1', views.casestudies1, name='casestudies1'),
