@@ -33,13 +33,15 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'core',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',
+    'registration',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +125,14 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 django_heroku.settings(locals())
+
+ACCOUNT_ACTIVATION_DAYS = 7
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'yo@askgobo.com'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'yo@askgobo.com'
+EMAIL_HOST_PASSWORD = 'epd-T3K-nPL-Lxk'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+
+LOGIN_REDIRECT_URL = "home"
