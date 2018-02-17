@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'api',
     'core',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'registration',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -126,6 +128,7 @@ STATIC_URL = '/static/'
 
 django_heroku.settings(locals())
 
+#EMAIL IS NOT SETUP YET
 ACCOUNT_ACTIVATION_DAYS = 7
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DEFAULT_FROM_EMAIL = 'yo@askgobo.com'
@@ -134,5 +137,16 @@ EMAIL_HOST_USER = 'yo@askgobo.com'
 EMAIL_HOST_PASSWORD = 'epd-T3K-nPL-Lxk'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-
 LOGIN_REDIRECT_URL = "home"
+
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
+
+REST_FRAMEWORK = {
+}

@@ -1,15 +1,16 @@
 from django.contrib import messages
+from django.contrib.auth.models import User, Group
 from django.http import HttpResponse, Http404
 from django.shortcuts import get_object_or_404, render
 from django.template import loader
-
+from rest_framework import viewsets
 
 from .models import Contact
 from .forms import ContactForm
 
-
-
 # Create your views here.
+
+
 def home(request):
     form = ContactForm(request.POST or None)
     if form.is_valid():
