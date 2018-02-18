@@ -2,7 +2,7 @@
 
 {% load staticfiles %}
 
-{% block title %}goboAdvisor - AI for IAs{{ block.super }}  {% endblock title %}
+{% block title %}goboAdvisor - AI for {{ block.super }} IAs {% endblock title %}
 
 
 {% block bgimage %}
@@ -14,11 +14,11 @@
 {% block billboard %}
 <img class="app-graph"  src="{% static 'img/startup-0.svg' %}">
 
-<div class="block-xs-middle pb-5">
+<div class="block-xs-middle pb-1">
   <div class="container">
     <div class="row">
-      <div class="col-sm-10 col-lg-7">
-        <h1 class="block-titleData frequency">Practice Management's Digital Wave</h1>
+      <div class="col-sm-10 col-lg-8">
+        <h1 class="block-titleData frequency">The Digital Wave of Practice Management</h1>
         <p class="lead mb-4 text-muted-bold">Compressed margins, competition, and automation are changing business models. We
         help small to mid size asset advisory businesses solve problems, build brands, convert prospects, and educate
         customers</p>
@@ -38,7 +38,7 @@
 <div class="block block-secondary app-block-marketing-grid" id="whatwedo">
   <div class="container text-xs-center">
 
-    <div class="row mb-5 justify-content-center">
+    <div class="row mb-0 justify-content-center">
       <div class="col-10 col-sm-8 col-lg-6">
         <h6 class="text-muted text-uppercase mb-2">Introducing your goboAdvisor</h6>
       </a>
@@ -66,11 +66,10 @@
 
     </div>
 
-    <div class="row mb-5 justify-content-center">
+    <div class="row mb-0 justify-content-center">
       <div class="col-10 col-sm-8 col-lg-6">
 
-        <a href="{% url 'casestudies' %}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">HOW WE HELP</a>
-
+        <a href="{% url 'casestudies' %}" class="btn btn-secondary btn-pill btn-lg active" role="button" aria-pressed="true">HOW WE HELP</a>
 
       </div>
     </div>
