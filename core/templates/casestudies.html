@@ -2,6 +2,11 @@
 
 {% load staticfiles %}
 
+{% block css %}
+<link href="{% static 'css/docs.css' %}" rel="stylesheet">
+{% endblock %}
+
+
 {% block title %}goboAdvisor - AI for IAs{{ block.super }}  {% endblock title %}
 
 
