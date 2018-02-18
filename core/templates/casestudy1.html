@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}Case Study &middot;  WBI {{ block.super }} Investments {% endblock title %}
+
+
+
+{% block content %}
+
+
+
+        <div class="block block-inverse app-high-praise"
+             style="background-image: url({% static 'img/wbi-case-study.jpg' %});">
+
+
+            <div class="container">
+              <div class="row app-align-center py-1 justify-content-end">
+                <div class="col-sm-7 col-md-5 col-xs-12 py-2">
+                  <!--<h6 class="text-muted text-uppercase mb-2">Service More Customers</h6>
+                  <h2 class="mb-4">When advisors spend time on non revenue generating
+                    functions like processing forms, customers aren't getting the attention they want.</h2>-->
+                  <!--<p class="mb-4 text-muted">Cindy Smith, founder of Cool Startup</p>-->
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="block block-secondary app-block-marketing-grid" id="case-study1">
+          <div class="container text-xs-center">
+
+            <div class="row mb-1 justify-content-center">
+              <div class="col-10 col-sm-8 col-lg-6 col-xs-12">
+                <h5 class="text-muted text-uppercase mb-0">Process Optimization</h5>
+              </a>
+                <h1 class="mb-4 font-weight-bold">WBI Investments</h1>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 col-sm-4 col-lg-4 col-xs-3">
+                <p class="text-left font-weight-bold">SUMMARY</p>
+                <p class="text-left">When an SMA manager converts their investment platform to an ETF strategy,
+                  backoffice systems need to be implemented and processes need to enhanced.</p>
+              </div>
+              <div class="text-left col-8 col-sm-8 col-lg-8 col-xs-12">
+                <p>When WBI, an independent investment advisor with a 30-plus year history
+                  converted their separately managed account platform into an exchange traded ETF
+                  strategy, they know that they needed to scale their technology in order to support
+                  more advisors. This radical transformation to a fee-only advisor platform meant
+                  that WBI needed to scale their technology and backoffice support. Instead of hiring
+                  more people to support higher volumes, WBI wanted to do more with the tools they had.
+                  After interviewing team leaders across the business, we discovered that many people had been
+                  doing their jobs "that way for 20 years".
+                  </p>
+
+                  <p>Legacy systems - i.e. Access databases and excel spreadsheets - were created as an adhoc request,
+                    but quickly became a process to support a new business function...30 years later, it was unclear to most users,
+                    how data travelled throughout the organization.
+                    </p>
+
+                    <p>After defining the goals - to create a single data source of to support all functions of the organization,
+                      it became clear that we needed to document the processes and data flow into and out of the firm,
+                      develop a rules-based workflow manager, and train people on how to use these new systems.
+                      </p>
+
+                      <p>At the end of the project, WBI was able to support over 12,000 accounts and launch 6 new ETFs.
+                        </p>
+
+
+
+              </div>
+
+            </div>
+
+
+{% endblock %}
