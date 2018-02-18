@@ -21,8 +21,6 @@ from rest_framework import routers, serializers, viewsets
 
 from core import views
 
-
-
 urlpatterns = [
     path('api', include('api.urls')),
     path('accounts/', include('registration.backends.default.urls')),
