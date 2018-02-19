@@ -35,7 +35,7 @@ def casestudies(request):
     #return render(request, 'casestudies.html')
 
 
-def casestudies1(request):
+def casestudy1(request):
     return render(request, 'casestudy1.html')
 
 

@@ -28,7 +28,7 @@ urlpatterns = [
     path('core/', include('core.urls')),
     path('', views.home, name='home'),
     path('casestudies/', views.casestudies, name='casestudies'),
-    path('casestudies/1', views.casestudies1, name='casestudies1'),
+    path('casestudies/1', views.casestudy1, name='casestudy1'),
     path('services/', views.services, name='services'),
     path('services/strategy', views.strategy, name='strategy'),
     path('services/platform', views.platform, name='platform'),
